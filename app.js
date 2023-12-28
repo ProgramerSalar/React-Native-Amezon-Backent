@@ -20,7 +20,9 @@ app.use(cors({
 // Routes 
 import user from "./routes/user.js"
 import product from "./routes/product.js"
+import category from "./routes/category.js"
 
 
 app.use('/ProgramerSalar/api/user', user)
 app.use("/programerSalar/api/product",  product)
+app.use("/programerSalar/api/product/category",  category)

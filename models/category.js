@@ -6,8 +6,19 @@ const schema = new mongoose.Schema({
     category:{
         type:String,
         required:[true, "Please Enter Category"]
+    },
+    image:
+        {
+            public_id:String,
+            url:String
+        },
+    
+    createdAt:{
+        type:Date,
+        default:Date.now
     }
+
 })
 
 
-export const category = mongoose.model("Category", schema)
+export const Category = mongoose.model("Category", schema)
