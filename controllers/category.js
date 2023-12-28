@@ -38,11 +38,11 @@ export const newCategory = async (req, res, next) => {
 
 export const getAllCategory = async (req, res, next) => {
 
-  const categories = await Category.find({})
+  const Categories = await Category.find({})
 
   res.status(200).json({
     success:true,
-    categories,
+    Categories,
   })
 
 
